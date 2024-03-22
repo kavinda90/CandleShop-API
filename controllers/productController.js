@@ -9,6 +9,33 @@ exports.getAllProducts = async (req, res) => {
   }
 };
 
+exports.getPaginationProducts = async (req, res) => {
+  // Pagination parameters
+  const page = parseInt(req.query._page) || 1;
+  const limit = parseInt(req.query._limit) || 10;
+  const skip = (page - 1) * limit;
+  const searchTerm = req.query.q; 
+
+  // Build query object based on searchTerm presence
+  let queryObj = {};
+  if (searchTerm) {
+    queryObj = { 
+      $or: [
+        { title: { $regex: searchTerm, $options: 'i' } }, // Search in title
+        { description: { $regex: searchTerm, $options: 'i' } } // Search in description
+      ]
+    };
+  }
+
+  try {
+    const products = await Product.find(queryObj).skip(skip).limit(limit);
+    const totalItems = await Product.countDocuments(queryObj); 
+    res.status(200).json({ data: products, totalItems });
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+};
+
 exports.getProductById = async (req, res) => {
   try {
     const product = await Product.findById(req.params.id);

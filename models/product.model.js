@@ -10,10 +10,6 @@ const productSchema = new Schema({
         type: String,
         required: true
     },
-    price: {
-        type: Number,
-        required: true
-    },
     scent: {
         type: String,
         required: true
@@ -22,9 +18,9 @@ const productSchema = new Schema({
         type: String,
         required: false // Optional, depending on your inventory
     },
-    size: {
-        type: String,
-        required: true
+    rating: {
+        type: Number,
+        required: false
     },
     burnTime: {
         type: String,
@@ -38,11 +34,8 @@ const productSchema = new Schema({
         type: String,
         required: true
     },
-    bulkAvailable: {
-        type: Boolean,
-        default: false
-    },
     bulkPricingOptions: [{
+        size: String,
         minimumQuantity: Number,
         pricePerUnit: Number
     }],

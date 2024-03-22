@@ -4,6 +4,9 @@ let ProductController = require("../controllers/productController");
 // Fetch all products
 router.get('/products', ProductController.getAllProducts);
 
+// Fetch all products with pagination
+router.get('/product-page', ProductController.getPaginationProducts);
+
 // Fetch a single product by ID
 router.get('/products/:id', ProductController.getProductById);
 

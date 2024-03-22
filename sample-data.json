@@ -1,0 +1,566 @@
+[
+    
+    {
+        "title": "Lavender Bliss",
+        "description": "A calming blend of fresh lavender and soft floral notes, perfect for relaxation.",
+        "scent": "Lavender",
+        "color": "Purple",
+        "size": "Medium",
+        "burnTime": "48 hours",
+        "images": [
+        {
+            "url": "candle1.jpg",
+            "alt": "Lavender Bliss Candle"
+        }
+        ],
+        "category": "Aromatherapy",
+        "rating": 5,
+        "bulkPricingOptions": [
+            {
+                "size": "50g",
+                "minimumQuantity": 20,
+                "pricePerUnit": 12.99
+            },
+            {
+                "size": "90g",
+                "minimumQuantity": 20,
+                "pricePerUnit": 14.99
+            },
+            {
+                "size": "190g",
+                "minimumQuantity": 20,
+                "pricePerUnit": 16.99
+            },
+            {
+                "size": "300g",
+                "minimumQuantity": 20,
+                "pricePerUnit": 18.99
+            },
+            {
+                "size": "420g",
+                "minimumQuantity": 20,
+                "pricePerUnit": 20.99
+            }
+        ],
+        "stock": 50,
+        "tags": ["relaxation", "lavender", "aromatherapy"],
+        "createdAt": "2024-03-01T00:00:00Z",
+        "updatedAt": "2024-03-01T00:00:00Z"
+    },
+    {
+        "title": "Citrus Grove",
+        "description": "Energize your senses with this vibrant, citrus-scented candle.",
+        "scent": "Citrus",
+        "size": "Small",
+        "images": [
+            {
+                "url": "candle2.jpg",
+                "alt": "Citrus Grove Candle"
+            }
+        ],
+        "category": "Fruit",
+        "rating": 4,
+        "bulkPricingOptions": [
+            {
+                "size": "50g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 13.99
+            },
+            {
+                "size": "90g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 15.99
+            },
+            {
+                "size": "190g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 17.99
+            },
+            {
+                "size": "300g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 19.99
+            },
+            {
+                "size": "420g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 21.99
+            }
+        ],
+        "stock": 80,
+        "tags": ["energizing", "citrus", "fresh"],
+        "createdAt": "2024-03-05T00:00:00Z",
+        "updatedAt": "2024-03-05T00:00:00Z"
+    },
+    {
+        "title": "Ocean Breeze",
+        "description": "Bring the scent of the sea into your home with notes of salt and driftwood.",
+        "scent": "Sea Salt",
+        "color": "Blue",
+        "size": "Large",
+        "burnTime": "72 hours",
+        "images": [
+            {
+                "url": "candle3.jpg",
+                "alt": "Ocean Breeze Candle"
+            }
+        ],
+        "category": "Nature",
+        "rating": 3,
+        "bulkPricingOptions": [
+            {
+                "size": "50g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 13.99
+            },
+            {
+                "size": "90g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 15.99
+            },
+            {
+                "size": "190g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 17.99
+            },
+            {
+                "size": "300g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 19.99
+            },
+            {
+                "size": "420g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 21.99
+            }
+        ],
+        "stock": 30,
+        "tags": ["refreshing", "sea", "breeze"],
+        "createdAt": "2024-03-10T00:00:00Z",
+        "updatedAt": "2024-03-15T00:00:00Z"
+    },
+    {
+        "title": "Vanilla Dreams",
+        "description": "Sweet and cozy vanilla scent for a comforting atmosphere.",
+        "scent": "Vanilla",
+        "color": "Cream",
+        "size": "Medium",
+        "burnTime": "50 hours",
+        "images": [
+          {
+            "url": "candle3.jpg",
+            "alt": "Vanilla Candle"
+          }
+        ],
+        "category": "Classic",
+        "rating": 4,
+        "bulkPricingOptions": [
+            {
+                "size": "50g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 13.99
+            },
+            {
+                "size": "90g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 15.99
+            },
+            {
+                "size": "190g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 17.99
+            },
+            {
+                "size": "300g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 19.99
+            },
+            {
+                "size": "420g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 21.99
+            }
+        ],
+        "stock": 100,
+        "tags": ["vanilla", "sweet", "cozy"],
+        "createdAt": "2024-03-01T00:00:00.000Z",
+        "updatedAt": "2024-03-01T00:00:00.000Z"
+      },
+      {
+        "title": "Lavender Luxe",
+        "description": "A soothing blend of lavender with a hint of eucalyptus.",
+        "scent": "Lavender",
+        "color": "Purple",
+        "size": "Large",
+        "burnTime": "60 hours",
+        "images": [
+          {
+            "url": "candle4.jpg",
+            "alt": "Lavender Luxe Candle"
+          }
+        ],
+        "category": "Aromatherapy",
+        "rating": 4,
+        "bulkPricingOptions": [
+            {
+                "size": "50g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 13.99
+            },
+            {
+                "size": "90g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 15.99
+            },
+            {
+                "size": "190g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 17.99
+            },
+            {
+                "size": "300g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 19.99
+            },
+            {
+                "size": "420g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 21.99
+            }
+        ],
+        "stock": 75,
+        "tags": ["lavender", "relaxing", "eucalyptus"],
+        "createdAt": "2024-03-05T00:00:00.000Z",
+        "updatedAt": "2024-03-05T00:00:00.000Z"
+      },
+      {
+        "title": "Citrus Sunrise",
+        "description": "Energize your day with the bright, uplifting scent of citrus.",
+        "scent": "Citrus",
+        "color": "Orange",
+        "size": "Small",
+        "burnTime": "30 hours",
+        "images": [
+          {
+            "url": "candle5.jpg",
+            "alt": "Citrus Sunrise Candle"
+          }
+        ],
+        "category": "Fruit",
+        "bulkAvailable": true,
+        "rating": 5,
+        "bulkPricingOptions": [
+            {
+                "size": "50g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 13.99
+            },
+            {
+                "size": "90g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 15.99
+            },
+            {
+                "size": "190g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 17.99
+            },
+            {
+                "size": "300g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 19.99
+            },
+            {
+                "size": "420g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 21.99
+            }
+        ],
+        "stock": 50,
+        "tags": ["citrus", "energizing", "bright"],
+        "createdAt": "2024-03-10T00:00:00.000Z",
+        "updatedAt": "2024-03-10T00:00:00.000Z"
+      },
+      {
+        "title": "Pine Forest",
+        "description": "Bring the outdoors inside with the fresh scent of pine.",
+        "scent": "Pine",
+        "color": "Green",
+        "size": "Medium",
+        "burnTime": "40 hours",
+        "images": [
+          {
+            "url": "candle6.jpg",
+            "alt": "Pine Forest Candle"
+          }
+        ],
+        "category": "Nature",
+        "rating": 4,
+        "bulkPricingOptions": [
+            {
+                "size": "50g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 13.99
+            },
+            {
+                "size": "90g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 15.99
+            },
+            {
+                "size": "190g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 17.99
+            },
+            {
+                "size": "300g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 19.99
+            },
+            {
+                "size": "420g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 21.99
+            }
+        ],
+        "stock": 80,
+        "tags": ["pine", "fresh", "outdoors"],
+        "createdAt": "2024-03-15T00:00:00.000Z",
+        "updatedAt": "2024-03-15T00:00:00.000Z"
+      },
+      {
+        "title": "Ocean Mist",
+        "description": "Capture the essence of the sea with this refreshing ocean scent.",
+        "scent": "Ocean",
+        "color": "Blue",
+        "size": "Large",
+        "burnTime": "45 hours",
+        "images": [
+          {
+            "url": "candle7.jpg",
+            "alt": "Ocean Mist Candle"
+          }
+        ],
+        "category": "Fresh",
+        "rating": 4,
+        "bulkPricingOptions": [
+            {
+                "size": "50g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 13.99
+            },
+            {
+                "size": "90g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 15.99
+            },
+            {
+                "size": "190g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 17.99
+            },
+            {
+                "size": "300g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 19.99
+            },
+            {
+                "size": "420g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 21.99
+            }
+        ],
+        "stock": 60,
+        "tags": ["ocean", "fresh", "mist"],
+        "createdAt": "2024-03-20T00:00:00.000Z",
+        "updatedAt": "2024-03-20T00:00:00.000Z"
+      },
+      {
+        "title": "Cinnamon Spice",
+        "description": "Warm and comforting, this candle fills your home with the scent of cinnamon.",
+        "scent": "Cinnamon",
+        "color": "Red",
+        "size": "Medium",
+        "burnTime": "50 hours",
+        "images": [
+          {
+            "url": "candle8.jpg",
+            "alt": "Cinnamon Spice Candle"
+          }
+        ],
+        "category": "Spice",
+        "rating": 3,
+        "bulkPricingOptions": [
+            {
+                "size": "50g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 13.99
+            },
+            {
+                "size": "90g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 15.99
+            },
+            {
+                "size": "190g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 17.99
+            },
+            {
+                "size": "300g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 19.99
+            },
+            {
+                "size": "420g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 21.99
+            }
+        ],
+        "stock": 40,
+        "tags": ["cinnamon", "warm", "spice"],
+        "createdAt": "2024-03-25T00:00:00.000Z",
+        "updatedAt": "2024-03-25T00:00:00.000Z"
+      },
+      {
+        "title": "Peppermint Breeze",
+        "description": "Invigorating peppermint to energize your space and refresh your mind.",
+        "scent": "Peppermint",
+        "color": "Green",
+        "size": "Small",
+        "burnTime": "30 hours",
+        "images": [
+          {
+            "url": "candle9.jpg",
+            "alt": "Peppermint Breeze Candle"
+          }
+        ],
+        "category": "Mint",
+        "rating": 4,
+        "bulkPricingOptions": [
+            {
+                "size": "50g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 13.99
+            },
+            {
+                "size": "90g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 15.99
+            },
+            {
+                "size": "190g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 17.99
+            },
+            {
+                "size": "300g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 19.99
+            },
+            {
+                "size": "420g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 21.99
+            }
+        ],
+        "stock": 80,
+        "tags": ["peppermint", "refreshing", "breeze"],
+        "createdAt": "2024-03-30T00:00:00.000Z",
+        "updatedAt": "2024-03-30T00:00:00.000Z"
+      },
+      {
+        "title": "Jasmine Nights",
+        "description": "A sensual and romantic jasmine scent to fill your evenings with love.",
+        "scent": "Jasmine",
+        "color": "White",
+        "size": "Large",
+        "burnTime": "60 hours",
+        "images": [
+          {
+            "url": "candle10.jpg",
+            "alt": "Jasmine Nights Candle"
+          }
+        ],
+        "category": "Floral",
+        "rating": 4,
+        "bulkPricingOptions": [
+            {
+                "size": "50g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 13.99
+            },
+            {
+                "size": "90g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 15.99
+            },
+            {
+                "size": "190g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 17.99
+            },
+            {
+                "size": "300g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 19.99
+            },
+            {
+                "size": "420g",
+                "minimumQuantity": 25,
+                "pricePerUnit": 21.99
+            }
+        ],
+        "stock": 30,
+        "tags": ["jasmine", "romantic", "floral"],
+        "createdAt": "2024-04-04T00:00:00.000Z",
+        "updatedAt": "2024-04-04T00:00:00.000Z"
+      },
+      {
+        "title": "Gingerbread Joy",
+        "description": "Bring joy with the sweet and spicy aroma of gingerbread.",
+        "scent": "Gingerbread",
+        "color": "Brown",
+        "size": "Medium",
+        "burnTime": "40 hours",
+        "images": [
+          {
+            "url": "candle11.jpg",
+            "alt": "Gingerbread Joy Candle"
+          }
+        ],
+        "category": "Holiday",
+        "rating": 2,
+        "bulkPricingOptions": [
+            {
+                "size": "50g",
+                "minimumQuantity": 10,
+                "pricePerUnit": 9.99
+            },
+            {
+                "size": "90g",
+                "minimumQuantity": 10,
+                "pricePerUnit": 12.99
+            },
+            {
+                "size": "190g",
+                "minimumQuantity": 10,
+                "pricePerUnit": 13.99
+            },
+            {
+                "size": "300g",
+                "minimumQuantity": 10,
+                "pricePerUnit": 15.99
+            },
+            {
+                "size": "420g",
+                "minimumQuantity": 10,
+                "pricePerUnit": 17.99
+            }
+        ],
+        "stock": 50,
+        "tags": ["gingerbread", "holiday", "joy"],
+        "createdAt": "2024-04-08T00:00:00.000Z",
+        "updatedAt": "2024-04-08T00:00:00.000Z"
+      }
+]
