@@ -1,5 +1,6 @@
 const router = require("express").Router();
 let ProductController = require("../controllers/productController");
+let UserController = require("../controllers/userController");
 
 // Fetch all products
 router.get('/products', ProductController.getAllProducts);
@@ -25,5 +26,10 @@ router.get('/products/category/:categoryName', ProductController.getProductsByCa
 // Fetch products by tag
 router.get('/products/tag/:tagName', ProductController.getProductsByTag);
 
-       
+router.post('/user/login', UserController.getValidUserByEmail);
+
+router.post('/user/profile', UserController.createUser);
+
+router.put('/user/profile/:id', UserController.updateUserByEmail);
+
 module.exports = router;
