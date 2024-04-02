@@ -30,6 +30,6 @@ router.post('/user/login', UserController.getValidUserByEmail);
 
 router.post('/user/profile', UserController.createUser);
 
-router.put('/user/profile/:id', UserController.updateUserByEmail);
+router.put('/user/profile', UserController.updateUserByEmail);
 
 module.exports = router;

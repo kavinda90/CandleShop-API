@@ -7,7 +7,7 @@ const getValidUserByEmail = async (req, res) => {
     if (!user) {
       res.status(401).json({message: 'Your email is wrong'});
     } else if (user.password === encryptPassword(req.body.password)) {
-      let sanitizedUser = await getSanitizedUser(user._id);
+      const sanitizedUser = await getSanitizedUser(user._id);
       res.status(200).json(sanitizedUser);
     } else {
       res.status(401).json({message: 'Your password doesn\'t match'});
@@ -32,7 +32,7 @@ const createUser = async (req, res) => {
 const updateUserByEmail = async (req, res) => {
   try {
     const updatedUser = await User
-    .findOneAndUpdate({email: req.body.email}, req.body, {new: true});
+    .findOneAndUpdate({email: req.body.email}, req.body);
     if (updatedUser) {
       res.status(200).json(getSanitizedUser(updatedUser._id));
     } else {
