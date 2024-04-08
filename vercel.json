@@ -1,15 +1,18 @@
-{ 
-    "version": 2, 
+{
+    "version": 2,
     "builds": [
-        {
-            "src": "./server.js",
-            "use": "@vercel/node"
-        }
+      {
+        "src": "server.js",
+        "use": "@vercel/node"
+      }
     ],
-    "routes" : [
-        {
-            "src": "/(.*)",
-            "dest": "/"
-        }
-    ]
-} 
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "server.js"
+      }
+    ],
+    "env": {
+      "ATLAS_URI": "mongodb+srv://kavinda:12345@cluster0.j2qmsdh.mongodb.net/candle_shop?retryWrites=true&w=majority&appName=Cluster0"
+    }
+  }
