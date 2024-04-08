@@ -1,13 +1,59 @@
 const Product = require('../models/product.model');
 
 exports.getAllProducts = async (req, res) => {
+  // Pagination parameters
+  const page = parseInt(req.query._page) || 1;
+  const limit = parseInt(req.query._limit) || 10;
+  const skip = (page - 1) * limit;
+  const searchTerm = req.query.q;
+  const category = req.query.category;
+  const scent = req.query.scent;
+  const size = req.query.size;
+  const color = req.query.color;
+  const sort = req.query._sort;
+  const order = req.query._order === 'desc' ? -1 : 1;
+  const isInStock = req.query.isInStock;
+
+  // Build query object based on searchTerm presence
+  let queryObj = {};
+
+  if (searchTerm) {
+    queryObj.$or = [
+      { title: { $regex: searchTerm, $options: 'i' } },
+      { description: { $regex: searchTerm, $options: 'i' } }
+    ];
+  }
+  
+  // Include category, scent, size, color, and stock status in query object if they are specified
+  if (category) {
+    queryObj.category = category;
+  }
+  if (scent) {
+    queryObj.scent = scent;
+  }
+  if (size) {
+    queryObj.size = size;
+  }
+  if (color) {
+    queryObj.color = color;
+  }
+  if (isInStock) {
+    queryObj.stock = { $gt: 0 };
+  }
+  
+  // Prepare sort object
+  let sortObj = {};
+  if (sort) {
+    sortObj[sort] = order; // Example: sort by price or name, with order being 1 for asc or -1 for desc
+  }
   try {
-    const products = await Product.find({});
+    const products = await Product.find(queryObj).skip(skip).limit(limit);
     res.status(200).json(products);
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
 };
+
 
 exports.getPaginationProducts = async (req, res) => {
   // Pagination parameters

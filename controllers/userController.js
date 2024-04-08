@@ -1,7 +1,7 @@
 const User = require("../models/user.model");
 const crypto = require("node:crypto");
 
-const getValidUserByEmail = async (req, res) => {
+exports.getValidUserByEmail = async (req, res) => {
   try {
     const user = await User.findOne({email: req.body.email});
     if (!user) {
@@ -16,7 +16,7 @@ const getValidUserByEmail = async (req, res) => {
   }
 };
 
-const createUser = async (req, res) => {
+exports.createUser = async (req, res) => {
   const user = new User({
     ...req.body, password: encryptPassword(req.body.password)
   });
@@ -28,7 +28,7 @@ const createUser = async (req, res) => {
   }
 };
 
-const updateUserByEmail = async (req, res) => {
+exports.updateUserByEmail = async (req, res) => {
   try {
     const existingUser = await User.findOne({email: req.body.email});
 
@@ -66,12 +66,10 @@ const updateUserByEmail = async (req, res) => {
 
 const getSanitizedUser = async (id) => {
   return User
-  .findById(id).select('-_id -__v -password').lean();
+  .findById(id).select('-__v -password').lean();
 }
 
 const encryptPassword = (password) => {
   return crypto.createHash('sha512').update(password).digest('hex');
 }
 
-const UserController = {createUser, getValidUserByEmail, updateUserByEmail};
-module.exports = UserController;
